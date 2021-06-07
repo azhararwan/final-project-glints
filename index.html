@@ -19,14 +19,14 @@
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#edu">Education</a>
+                <a href="#org">Organization</a>
                 <a href="#contact">Contact</a>
                 <label class="switch">
                     <input type="checkbox" id="mode-switch">
                     <span class="slider round"></span>
                 </label>
             </div>
-
-            <div class="menu" onclick="myFunction(this)">
+            <div class="menu" id="menu" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -40,8 +40,8 @@
             <div class="cover">
                 <h1>Hello, I'm <span>Azhar Arwan</span>.</h1>
                 <p>A <span>college student</span>.</p>
-                <p>Currently taking part in a <span>coding program</span></p>
-                <p>organized by <span>Amman x Glints Academy</span>.</p>
+                <p>Currently taking part in a <span>coding program</span>
+                organized by <span>Amman x Glints Academy</span>.</p>
                 <div class="cover-btn">
                     <button type="button" class="btn learn" onclick="window.location.href='#about';"> Learn more! </button>
                 </div>
@@ -106,7 +106,7 @@
                 </div>
 
                 <div class="content-org">
-                   <div class="card" id="org">
+                   <div class="card" id="card1">
                        <div class="card-img">
                            <img src="images/hmsi.png">
                        </div>
@@ -116,7 +116,7 @@
                            <p>Staff Ahli (2020/2021)</p>
                        </div>
                    </div> 
-                   <div class="card" id="org">
+                   <div class="card" id="card2">
                         <div class="card-img">
                             <img src="images/bemftik.jpg">
                             <h3>BEM FTIK ITS </h3>
@@ -124,8 +124,8 @@
                             <p>Staff (2019/2020)</p>
                         </div>
                     </div> 
-                    <div class="card">
-                        <div class="card-img" id="org">
+                    <div class="card" id="card3">
+                        <div class="card-img">
                             <img src="images/osis.png">
                             <h3>OSIS SMAN 1 Seteluk</h3>
                             <h4>(Organisasi Siswa Intra Sekolah)</h4>
@@ -169,7 +169,9 @@
             document.getElementById("home").classList.toggle("dark-mode-home");
             document.getElementById("about").classList.toggle("dark-mode-about");
             document.getElementById("org").classList.toggle("dark-mode-org");
-            document.getElementById("form").classList.toggle("dark-mode-form");
+            document.getElementById("card1").classList.toggle("dark-mode-card");
+            document.getElementById("card2").classList.toggle("dark-mode-card");
+            document.getElementById("card3").classList.toggle("dark-mode-card");
             document.getElementById("contact-data").classList.toggle("dark-mode-contactdata");
             document.getElementById("name").classList.toggle("dark-mode-name");
             document.getElementById("email").classList.toggle("dark-mode-email");
@@ -177,6 +179,16 @@
         });
     });
 
+    function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    
 
 </script>
 

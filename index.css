@@ -14,6 +14,7 @@ a {
 
 .header {
     background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
     display: flex; 
     justify-content: space-between;
     position: fixed;
@@ -41,12 +42,12 @@ a {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #ffd700;
     color: black;
 }
   
 .navbar a.active {
-    background-color: #ffd700;
+    background-color: #ddd;
     color: black;
 }
 
@@ -81,13 +82,13 @@ a {
     width: 13px;
     left: 2px;
     bottom: 2px;
-    background-color: white;
+    background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
 }
   
 input:checked + .slider {
-    background-color: rgb(20, 20, 20);
+    background-color: #ffd700;
     box-shadow: 0 0 2px white;
 }
   
@@ -109,17 +110,17 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.menu {
-    margin-top: 10px;
-    display: none;
-}
-
 .bar1, .bar2, .bar3 {
     width: 25px;
     height: 3px;
     background-color: white;
     margin: 4px 0;
     transition: 0.4s;
+}
+
+.menu {
+    display: none;
+    cursor: pointer; 
 }
 
 /* END HEADER */
@@ -154,7 +155,7 @@ input:checked + .slider:before {
 }
   
 .cover p {
-    font-size: 17px;
+    font-size: 16px;
     opacity: 0.8;
 }
 
@@ -245,27 +246,24 @@ input:checked + .slider:before {
 
 .edu h1 {
     font-size: 30px;
-    width: 13%;
-    border-bottom: 3px solid;
+    text-decoration: underline;
 }
 
 .edu .edu-container {
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .edu .edu-container .edu-box {
-    width: 600px;
+    width: 100%;
     margin: auto 16px 64px 16px;
-    padding-left: 20px;
-    border-left: 3px solid #ffd700;
 }
 
 .edu .edu-container .edu-box span {
     font-size: 12px;
     background-color: #222;
-    color: white;
+    color: #ffd700;
     border-radius: 80px;
     padding: 10px 10px;
 }
@@ -285,6 +283,7 @@ input:checked + .slider:before {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 20px;
+    text-align: center;
 }
 
 .org .title {
@@ -313,8 +312,7 @@ input:checked + .slider:before {
 
 .org .content-org .card .card-img img {
     height: 150px;
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 /* END ORGANIZATION */
@@ -367,6 +365,7 @@ input:checked + .slider:before {
 
 .contact h1 {
     font-weight: bold;
+    margin-bottom: 50px;
     border-bottom: 3px solid;
 }
 
@@ -377,7 +376,6 @@ input:checked + .slider:before {
 
 .contact-inputdata input {
 	height: 30px;
-	width: 250px;
 	border: none;
     outline: none;
 	border-bottom: 1px solid;
@@ -393,11 +391,10 @@ input:checked + .slider:before {
 }
 
 .contact-message {
-    margin: 50px;
+    padding: 30px;
 }
 
 .contact-message button {
-    margin-bottom: 50px;
     transition: 1s;
 }
 
@@ -476,8 +473,8 @@ footer span {
     background-color: black;
 }
 
-.dark-mode-form {
-    box-shadow:2px 2px 12px rgba(255, 255, 255, 0.2) !important;
+.dark-mode-card {
+    box-shadow:0px 0px 12px rgba(255,255,255,0.2) !important;
 }
 
 .dark-mode-contactdata {
