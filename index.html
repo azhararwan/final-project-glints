@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azhar Arwan</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <img class="logo" src="images/logo.png">
+            </div>
+
+            <div class="navbar" id="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#edu">Education</a>
+                <a href="#contact">Contact</a>
+                <label class="switch">
+                    <input type="checkbox" id="mode-switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="body">
+
+        <div class="home" id="home">
+            <div class="cover">
+                <h1>Hello, I'm <span>Azhar Arwan</span>.</h1>
+                <p>A <span>college student</span>.</p>
+                <p>Currently taking part in a <span>coding program</span></p>
+                <p>organized by <span>Amman x Glints Academy</span>.</p>
+                <div class="cover-btn">
+                    <button type="button" class="btn learn" onclick="window.location.href='#about';"> Learn more! </button>
+                </div>
+            </div>
+        </div>
+        
+
+        <section class="main">
+            <div class="about" id="about">
+                <img src="images/profil.png">
+                <div class="content-about">
+                    <h1>About Me</h1>
+                    <p>Hello, My name is Muhammad Azhar Arwan. I'm 21 years old.
+                        I live in Seteluk, West Sumbawa. I'm studying at Sepuluh Nopember Institute of Technology majoring in Information Systems. 
+                        Since I was in high school, I always interested in computer. Now I really interested in web design. 
+                        And here I am, taking part in a coding program that organized by Amman x Glints Academy.
+                    </p> 
+                </div>
+            </div>
+        </section>
+
+        <section class="extra">
+            <div class="edu" id="edu">
+                <div class="edu-title">
+                    <center><h1>Education</h1></center>
+                </div>
+                <div class="edu-container">
+                    <div class="edu-box">
+                        <div class="edu-content">
+                            <span> 2017 - Present </span><br><br>
+                            <strong> Sepuluh Nopember Institute of Technology </strong>
+                        </div>
+                    </div>
+                    <div class="edu-box">
+                        <div class="edu-content">
+                            <span> 2014 - 2017 </span><br><br>
+                            <strong> SMAN 1 Seteluk </strong>
+                        </div>
+                    </div>
+                    <div class="edu-box">
+                        <div class="edu-content">
+                            <span> 2011 - 2014 </span><br><br>
+                            <strong> SMPN 1 Seteluk </strong>
+                        </div>
+                    </div>
+                    <div class="edu-box">
+                        <div class="edu-content">
+                            <span> 2005 - 2011 </span><br><br>
+                            <strong> SDN 3 Seteluk </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section class="extra">
+            <div class="org" id="org">
+                <div class="title">
+                    <h1>Organization</h1>
+                </div>
+
+                <div class="content-org">
+                   <div class="card" id="org">
+                       <div class="card-img">
+                           <img src="images/hmsi.png">
+                       </div>
+                       <div class="card-detail">
+                           <h3>HMSI ITS</h3>
+                           <h4>(Himpunan Mahasiswa Sistem Informasi)</h4>
+                           <p>Staff Ahli (2020/2021)</p>
+                       </div>
+                   </div> 
+                   <div class="card" id="org">
+                        <div class="card-img">
+                            <img src="images/bemftik.jpg">
+                            <h3>BEM FTIK ITS </h3>
+                            <h4>(Badan Eksekutif Mahasiswa Fakultas Teknologi Informasi dan Komunikasi)</h4>
+                            <p>Staff (2019/2020)</p>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="card-img" id="org">
+                            <img src="images/osis.png">
+                            <h3>OSIS SMAN 1 Seteluk</h3>
+                            <h4>(Organisasi Siswa Intra Sekolah)</h4>
+                            <p>Ketua (2015/2016)</p>
+                            <p>Sekretaris II (2014/2015)</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <div class="contact" id="contact">
+            <form id="form">
+                <div class="contact-data" id="contact-data">
+                    <h1> Contact Me </h1>
+                    <div class="contact-inputdata">
+                        <span> Name : </span> <input type="text"  id="name" placeholder="Full Name"/>
+                        <span> Email : </span> <input type="email" id="email" placeholder="example@email.com"/>
+                    </div>
+                </div>
+
+                <div class="contact-message">
+                    <span> Message : </span> <textarea id="message" name="message" rows="5" cols="20" placeholder="Your message here..."></textarea>
+                    <button type="submit" onclick="alert('Message sent')"> Submit </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Created by <span>Muhammad Azhar Arwan</span> | 2021</p>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var switchMode = document.querySelector('input[type="checkbox"]');
+        switchMode.addEventListener('change', function() {
+            document.body.classList.toggle("dark-mode-body");
+            document.getElementById("home").classList.toggle("dark-mode-home");
+            document.getElementById("about").classList.toggle("dark-mode-about");
+            document.getElementById("org").classList.toggle("dark-mode-org");
+            document.getElementById("form").classList.toggle("dark-mode-form");
+            document.getElementById("contact-data").classList.toggle("dark-mode-contactdata");
+            document.getElementById("name").classList.toggle("dark-mode-name");
+            document.getElementById("email").classList.toggle("dark-mode-email");
+            document.getElementById("message").classList.toggle("dark-mode-message");
+        });
+    });
+
+
+</script>
+
+</html>
