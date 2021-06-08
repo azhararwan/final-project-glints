@@ -53,11 +53,8 @@
 	.navbar.responsive a {
 	  display: block;
 	  text-align: center;
-	  width: 60%;
-	}
-
-	.nav {
-		margin-right: 20px;
+	  width: 70%;
+	  margin-left: 20px;
 	}
 
 	.switch {
