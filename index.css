@@ -24,9 +24,20 @@ a {
     z-index: 10;
 }
 
-.logo{
+.header-left {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     height: 30px;
-    margin: 10px 0 auto 20px;
+    margin: 0 10px;
+}
+
+.navbar {
+    overflow: hidden;
+    display: inline;
 }
 
 .navbar a {
@@ -51,12 +62,24 @@ a {
     color: black;
 }
 
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none;
+}
+
 .switch {
     position: relative;
     display: inline-block;
     width: 30px;
     height: 17px;
-    margin: 15px auto auto 10px;
+    margin-bottom: 8px;
 }
   
 .switch input { 
@@ -108,19 +131,6 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.menu {
-    display: none;
-    cursor: pointer; 
 }
 
 /* END HEADER */
@@ -218,7 +228,7 @@ input:checked + .slider:before {
 	justify-content:space-evenly;
 	align-items: center;
     border-radius:20px;
-	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	box-shadow:0px 0px 12px rgba(0,0,0,0.2);
 }
 
 .about img{
@@ -489,4 +499,7 @@ footer span {
 }
 
 /* END DARK MODE */
+
+/* MOBILE MENU */
+
 

@@ -1,6 +1,6 @@
 /* TABLET */
 @media all and (max-width: 1024px) {
-    .about {
+	.about {
         padding: 0 30px;
     }
     
@@ -10,7 +10,8 @@
 }
 
 @media all and (max-width: 800px) {
-    .about {
+
+	.about {
         padding: 10px 30px;
     }
 
@@ -22,18 +23,45 @@
 
 /* SMARTPHONE */
 @media all and (max-width: 600px) {
+	.header-left {
+		align-items: unset;
+		margin: unset;
+	}
+
     .logo{
+		height: 20px;
         margin-top: 5px;
     }
 
     .menu {
-        margin: 10px;
+		position: absolute;
+		margin-right: 10px;
+		right: 0;
+		top: 0;
         display: block;
-        cursor: pointer;
+		cursor: pointer; 
     }
 
-	.navbar {
+	.navbar a {
 		display: none;
+	}
+
+	.navbar.responsive {
+		position: relative;
+	}
+
+	.navbar.responsive a {
+	  display: block;
+	  text-align: center;
+	  width: 60%;
+	}
+
+	.nav {
+		margin-right: 20px;
+	}
+
+	.switch {
+		margin: 5px auto 5px 10px;
 	}
 
     .home>.cover{
